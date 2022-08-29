@@ -17,7 +17,7 @@ const App = () => {
           <Routes className="h-full ">
             <Route path='/' element={<Home/>}/>
             <Route path='Home' element={<Home/>}/>
-            <Route path='Moayad-Portfolio' element={<Home/>}/>
+            <Route path='moayad-portfolio' element={<Home/>}/>
             <Route path='about' element={<About/>}/>
             <Route path='portfolio' element={<Portfolio/>}/>
             <Route path='skills' element={<Skills/>}/>

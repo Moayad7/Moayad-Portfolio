@@ -16,7 +16,7 @@ export const Title = () => {
     <div className='shadow-lg py-9 md:py-14 lg:py14 order-first sm:order-first lg:order-2'>
         <h1 className=' text-center text-indigo-600 text-4xl lg:text-4xl xl:text-5xl'>
             <span className='italic text-pink-500'>Hello! </span>I'm<br/>
-            <motion.span variants={item} initial='hidden' animate='visible' className='bold'>Moayad Ahmad</motion.span><br/>
+            <motion.span variants={item} initial='hidden' animate='visible' className='bold tracking-wider'>Moayad Ahmad</motion.span><br/>
             Frontend, <span className='text-pink-500'>React </span>developer
         </h1>
         <div className='grid grid-cols-3 gap-3 px-1 xl:px-14'>

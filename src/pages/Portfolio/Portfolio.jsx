@@ -1,9 +1,12 @@
 import React from 'react'
+import { Title } from '../../components/Title'
+import { Items } from './Items'
 
 export const Portfolio = () => {
   return (
-    <div className='w-full grid place-items-center'>
-        <h1 className='text-9xl'>Potfolio</h1>
+    <div className='w-full flex flex-col'>
+        <Title name="Portfolio"/>
+        <Items/>
     </div>
   )
 }

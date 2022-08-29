@@ -50,8 +50,8 @@ const Index = () => {
                     </span>
                 </div>
 
-                <ul className='pr-14 md:flex sm:items-center z-[1] md:z-auto md:static bg-indigo-800 md:bg-transparent lg:bg-transparent absolute text-white w-full left-0  md:w-auto md:py-0 py-4 text-center md:opacity-100 top-[75px] left-[-1080px] transition-all ease-in mx-auto'>
-                    <NavItems url='Moayad-Portfolio' name='Home'/>
+                <ul className='md:pr-14 md:flex sm:items-center z-[1] md:z-auto md:static bg-indigo-800 md:bg-transparent lg:bg-transparent absolute text-white w-full left-0  md:w-auto md:py-0 py-4 text-center md:opacity-100 top-[75px] left-[-1080px] transition-all ease-in mx-auto'>
+                    <NavItems url='moayad-portfolio' name='Home'/>
                     <NavItems url='About' name='About'/>
                     <NavItems url='Portfolio' name='Portfolio'/>
                     <NavItems url='Skills' name='Skills'/>
