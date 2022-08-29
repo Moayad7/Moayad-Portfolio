@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import BackDrop from "../BackDrop/index";
 import React, { useState } from 'react';
 import DataFetch from "./DataFetch";
 import {Button} from './Button'
-import Background from "../Background";
 
 
 
@@ -34,7 +32,7 @@ const dropIn = {
 
 const Modal = ({handleClose, text}) => {
     return(
-        <div className=" m-4 absolute grid place-items-center" onClick={handleClose}>
+        <div className=" m-4 absolute grid place-items-center w-full h-full" onClick={handleClose}>
             <motion.div
                 drag='x'
                 dragConstraints={{right:0 ,left:0}}
@@ -45,11 +43,8 @@ const Modal = ({handleClose, text}) => {
                 animate="visible"
                 exit='exit'
             >
-                {/* <h1 className="text-5xl p-6 rounded-3xl text-sky-50 ">Modal</h1> */}
-                
                 <DataFetch/>
                 <Button handleClose={handleClose}/>
-                <Background/>
             </motion.div>
 
             

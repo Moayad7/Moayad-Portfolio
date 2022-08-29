@@ -11,12 +11,13 @@ import { Footer } from './components/Navbar/Footer/Footer';
 const App = () => {
   return (
     
-      <div className="App lg:h-screen bg-gradient-to-b from-indigo-100 to-indigo-200 ">
-        <Router className="h-screen">
+      <div className="App h-full ">
+        <Router className="h-full ">
           <Navbar/>
-          <Routes className="h-full relative">
+          <Routes className="h-full ">
             <Route path='/' element={<Home/>}/>
             <Route path='Home' element={<Home/>}/>
+            <Route path='Moayad-Portfolio' element={<Home/>}/>
             <Route path='about' element={<About/>}/>
             <Route path='portfolio' element={<Portfolio/>}/>
             <Route path='skills' element={<Skills/>}/>

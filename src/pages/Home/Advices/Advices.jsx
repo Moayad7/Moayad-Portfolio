@@ -13,7 +13,7 @@ function Advices() {
   
   
   return (
-    <div className="shadow-lg py-9 md:py-14 flex flex-col justify-center items-center lg:order-3">
+    <div className="shadow-lg py-9 md:py-14 flex flex-col justify-center items-center lg:order-3 relative">
         <h1 className='text-indigo-600 italic'>Here you can take a random advice</h1>
         <ShowButton modalOpen={modalOpen} close={close} open={open}></ShowButton>
         <AnimatePresence
