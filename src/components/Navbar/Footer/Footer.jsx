@@ -3,7 +3,7 @@ import { Logo } from '../../Logo'
 
 export const Footer = () => {
   return (
-    <div className='sm:flex text-center justify-between items-center bg-gradient-to-b from-indigo-600 to-indigo-800 w-full px-7 sm:px-14 py-3 mt-5 sm:mt-0 lg:fixed lg:bottom-0'>
+    <div className={`sm:flex text-center justify-between items-center bg-gradient-to-b from-indigo-600/90 to-indigo-800/90  w-full px-7 sm:px-14 py-3 mt-5 sm:mt-0 lg:fixed lg:bottom-0`}>
         <Logo className=""/>
         <h1 className='text-indigo-50 sm:text-xl'>copy rights reserved &#169; 2022  </h1>
         <div className='flex text-xl sm:text-3xl  justify-center text-indigo-50'>

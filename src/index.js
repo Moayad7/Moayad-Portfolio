@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter} from 'react-router-dom'
 import './index.css';
 import App from './App';
+import background from './components/Images/Background-01.jpg'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div className='xl:h-screen bg-gradient-to-b from-indigo-100 to-indigo-200' >
-    <App />
+  <div className={`bg-[url('${background}')]`} >
+    <App/>
   </div>
 );
 

@@ -10,8 +10,8 @@ import { Footer } from './components/Navbar/Footer/Footer';
 
 const App = () => {
   return (
-    
-      <div className="App h-full ">
+     
+      <div className="App lg:h-screen absolte bg-gradient-to-br from-indigo-100/70 to-indigo-200/70">
         <Router className="h-full ">
           <Navbar/>
           <Routes className="h-full ">
