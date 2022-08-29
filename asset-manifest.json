@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Moayad-Ahmad/static/css/main.6fb5edf1.css",
+    "main.js": "/Moayad-Ahmad/static/js/main.7a1e3b08.js",
+    "static/media/3.png": "/Moayad-Ahmad/static/media/3.8be3bd0081079b3f0ed5.png",
+    "static/media/1.png": "/Moayad-Ahmad/static/media/1.d956a48a235fb4e4cb17.png",
+    "static/media/5.png": "/Moayad-Ahmad/static/media/5.3461e9d372d0be96d066.png",
+    "static/media/4.png": "/Moayad-Ahmad/static/media/4.2a9290e67020d4f8ea5d.png",
+    "static/media/2.png": "/Moayad-Ahmad/static/media/2.bbf1febab05422d9afea.png",
+    "index.html": "/Moayad-Ahmad/index.html",
+    "main.6fb5edf1.css.map": "/Moayad-Ahmad/static/css/main.6fb5edf1.css.map",
+    "main.7a1e3b08.js.map": "/Moayad-Ahmad/static/js/main.7a1e3b08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fb5edf1.css",
+    "static/js/main.7a1e3b08.js"
+  ]
+}
