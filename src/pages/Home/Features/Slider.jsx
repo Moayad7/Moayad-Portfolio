@@ -21,7 +21,7 @@ export const Slider = () => {
                     <motion.div className='mb-5' >
                         <img className='rounded-2xl w-full h-full pointer-events-none '  src={image.img} alt=''/>
                     </motion.div>
-                    <a className='text-indigo-600 sm:text-xl italic' href={image.url} target="_blank">{image.url}</a>
+                    <a className='text-indigo-800 sm:text-xl italic' href={image.url} target="_blank">{image.url}</a>
                 </div>
               );
             })}
