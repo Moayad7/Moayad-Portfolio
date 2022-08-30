@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <motion.div 
       ref={constraintsRef}
-      className=' border-b-2 border-indigo-600 text-4xl sm:text-3xl text-indigo-600 items-center h-60 lg:h-full  w-full flex  justify-center overflow-hidden'
+      className=' border-b-2 border-dashed border-indigo-600 text-4xl sm:text-3xl text-indigo-600 items-center h-60 lg:h-full  w-full flex  justify-center overflow-hidden'
     >
         <h1 className='text-xl sm:text-4xl absolute z-[0] opacity-50 w-full text-center text-indigo-800 pb-14'>Enjoy in my space.<br/><span className='text-xl sm:text-3xl text-pink-500'>drag them &#128513;</span></h1>
         <motion.div 
