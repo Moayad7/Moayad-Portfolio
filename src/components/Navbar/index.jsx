@@ -42,11 +42,11 @@ const Index = () => {
             initial='hidden'
             animate='visible'
         >
-            <nav className='p-5 bg-gradient-to-b from-indigo-800 to-indigo-900 shadow text-indigo-500 md:flex md:items-center justify-evenly md:justify-evenly'>
+            <nav className='p-5 bg-gradient-to-b from-indigo-800 via-indigo-700 to-indigo-900 shadow text-indigo-500 md:flex md:items-center justify-evenly md:justify-evenly'>
                 <div className='flex justify-between items-center'>
                     <Logo />
-                    <span className='text-3xl cursor-pointer mx-2 md:hidden block '>
-                        <ion-icon name="menu" onClick={Menu} className="transition-all ease-in duration-500"></ion-icon>
+                    <span className='text-3xl cursor-pointer mx-2 md:hidden text-indigo-50 '>
+                        <ion-icon name="menu" onClick={Menu} className=" transition-all ease-in duration-500"></ion-icon>
                     </span>
                 </div>
 
