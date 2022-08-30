@@ -7,7 +7,7 @@ import { Features } from './Features/Features'
 export const Home = () => {
   return (
     <div className='text-center '>
-      <div className='grid grid-cols-1  sm:grid-cols-1 lg:grid-cols-3  sm:gap-4 '> 
+      <div className='grid grid-cols-1 lg:grid-cols-3 '> 
           <Drag/>
           <Title/>
           <Advices/>

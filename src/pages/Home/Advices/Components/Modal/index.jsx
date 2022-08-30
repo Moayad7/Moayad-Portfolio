@@ -32,7 +32,7 @@ const dropIn = {
 
 const Modal = ({handleClose, text}) => {
     return(
-        <div className=" m-4 absolute grid place-items-center w-full h-full" onClick={handleClose}>
+        <div className=" m-4 absolute z-[10] grid place-items-center w-full h-full" onClick={handleClose}>
             <motion.div
                 drag='x'
                 dragConstraints={{right:0 ,left:0}}
