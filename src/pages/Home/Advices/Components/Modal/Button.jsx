@@ -11,7 +11,7 @@ export const Button = ({handleClose}) => {
                     scale:0.9,
                 }}
                 onClick={handleClose}
-                className="text-2xl bg-black text-red-50 p-2 rounded-xl mt-5"
+                className="text-2xl bg-slate-800 text-red-50 p-2 rounded-xl mt-5"
                 >
                     Close
                 </motion.button>

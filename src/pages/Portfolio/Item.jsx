@@ -74,7 +74,7 @@ const handleClick = () => {
 
 
   return (
-    <motion.div className='grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden' >
+    <div className='grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden' >
         {items.map(item => (
             <motion.div 
                 layoutId={item.id}
@@ -98,21 +98,21 @@ const handleClick = () => {
                             layoutId={selectedId}
                             onClick={(e)=>e.stopPropagation()}
                         >
-                            <motion.img initial={{x:100}} animate={{x:0}} className='shadow-lg rounded-xl  lg:h-96' src={items[selectedId - 1].img.img}></motion.img>
+                            <img  className='shadow-lg rounded-xl  lg:h-96' src={items[selectedId - 1].img.img}></.img>
                             
-                                <motion.h1 className='text-2xl lg:text-5xl bold'>{items[selectedId - 1].name}</motion.h1>
-                                <motion.p className='lg:text-2xl'>{items[selectedId - 1].describe}</motion.p>
+                                <h1 className='text-2xl lg:text-5xl bold'>{items[selectedId - 1].name}</.h1>
+                                <p className='lg:text-2xl'>{items[selectedId - 1].describe}</p>
                                 <motion.div
                                     whileTap={{y:2}}
                                 >
                                 <a className='lg:text-2xl bold italic pointer-event-none border-b-2 p-2  border-dashed text-violet-800 rounded-lg border-violet-700 ' href={`${items[selectedId - 1].link}`} target="_blank">Live Demo</a>
                                 </motion.div>
-                                <motion.button className='bg-violet-800 rounded-2xl px-6 py-3 text-violet-50' onClick={() => {setSelectedId(null); ; setIsOpen(false)}} >close</motion.button>
+                                <button className='bg-violet-800 rounded-2xl px-6 py-3 text-violet-50' onClick={() => {setSelectedId(null); ; setIsOpen(false)}} >close</button>
                            
                         </motion.div>
                 </BackDrop>
             )}
         </AnimatePresence>
-    </motion.div>
+    </div>
   )
 }
