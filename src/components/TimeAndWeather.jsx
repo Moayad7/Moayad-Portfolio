@@ -38,7 +38,7 @@ export const TimeAndWeather = () => {
   return (
     <motion.button
         whileHover={{scale:1.4,x:-50}} 
-        className='flex flex-col absolute lg:top-4 right-2 top-[-100%] text-indigo-50'
+        className='flex flex-col absolute lg:top-4 right-2 top-[-100%] text-slate-50'
     >
         <h1 className='flex items-center h-6 pr-2'>{query && query.toLocaleTimeString()} ,<h1 className='flex items-center h-6'>{date.toDateString()}</h1> </h1>
     

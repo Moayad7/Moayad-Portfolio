@@ -42,15 +42,15 @@ const Index = () => {
             initial='hidden'
             animate='visible'
         >
-            <nav className='p-5 bg-gradient-to-b from-indigo-800 via-indigo-800 to-indigo-900 shadow text-indigo-500 md:flex md:items-center justify-evenly md:justify-evenly'>
+            <nav className='p-5 bg-gradient-to-b from-slate-800 via-slate-800 to-slate-900 shadow text-slate-500 md:flex md:items-center justify-evenly md:justify-evenly'>
                 <div className='flex justify-between items-center'>
                     <Logo />
-                    <span className='text-3xl cursor-pointer mx-2 md:hidden text-indigo-50 '>
+                    <span className='text-3xl cursor-pointer mx-2 md:hidden text-slate-50 '>
                         <ion-icon name="menu" onClick={Menu} className=" transition-all ease-in duration-500"></ion-icon>
                     </span>
                 </div>
 
-                <ul className='md:pr-14 md:flex sm:items-center z-[1] md:z-auto md:static bg-indigo-900 md:bg-transparent lg:bg-transparent absolute text-white w-full left-0  md:w-auto md:py-0 py-4 text-center md:opacity-100 top-[75px] left-[-1080px] transition-all ease-in mx-auto'>
+                <ul className='md:pr-14 md:flex sm:items-center z-[1] md:z-auto md:static bg-slate-900 md:bg-transparent lg:bg-transparent absolute text-white w-full left-0  md:w-auto md:py-0 py-4 text-center md:opacity-100 top-[75px] left-[-1080px] transition-all ease-in mx-auto'>
                     <NavItems url='moayad-portfolio' name='Home'/>
                     <NavItems url='About' name='About'/>
                     <NavItems url='Portfolio' name='Portfolio'/>

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { motion, AnimateSharedLayout  } from 'framer-motion'
 import { Item } from './Item'
 
 export const Items = () => {
+
+
   return (
-    <div className='my-10 md:my-5'>
+    <motion.div layout className='my-10'>
         <Item/>
-    </div>
+    </motion.div>
   )
 }

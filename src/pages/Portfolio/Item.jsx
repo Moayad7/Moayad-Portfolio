@@ -1,81 +1,118 @@
-import { motion } from 'framer-motion'
+import { motion, AnimateSharedLayout, AnimatePresence  } from 'framer-motion'
 import React, {useState} from 'react'
+import BackDrop from './BackDrop'
+import { Link } from 'react-router-dom'
 
 const items = [
     {
         id:1,
-        name: "projectname",
+        name: "Photo portfolio",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/photo-gallery/",
+        describe: "designed by bootstraps, and include (react router, react link, react modal, react slider) and the photos reference is from picsum.com."
     },
     {
         id:2,
-        name: "projectname",
+        name: "Advice Generator",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/advices/",
+        describe: "A component app designed by tailwindCSS, shows a random advice from custom api and has pretty motion by (framer-motion)"
     },
     {
         id:3,
-        name: "projectname",
+        name: "QR generator",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/qr-generator/",
+        describe: "A component app designed by tailwindCSS, used google api to generate QR pattern. "
     },
     {
         id:4,
-        name: "projectname",
+        name: "Weather app",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/weather-app/",
+        describe: "A component app designed by tailwindCSS, used openweather api to get the weather of locations."
     },
     {
         id:5,
-        name: "projectname",
+        name: "Login app",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/login-app/",
+        describe: "A component app designed by tailwindCSS, have authentication and simple design."
     },
     {
         id:6,
-        name: "projectname",
+        name: "Search app",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/search-app/",
+        describe: "A component app designed by bootstraps, very simple app, does search in a list of objects. "
     },
     {
         id:7,
-        name: "projectname",
+        name: "Blogr landing",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/blogr-landing/",
+        describe: "A linding page made and designed by html,css,bootstraps"
     },
     {
         id:8,
-        name: "projectname",
+        name: "Bootstrap project:",
         img: "url",
-        link: "url",
-        describe: "paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them paragraf about th project to describe them "
+        link: "https://moayad7.github.io/Bootstrap-project/",
+        describe: "A landing page designed only by bootsrap,html."
     }
 ]
 
 
-
 export const Item = () => {
+    const [selectedId, setSelectedId] = useState(null)
+    const [isOpen, setIsOpen] = useState(false)
+
+const handleClick = () => {
+    setSelectedId(null);
+     setIsOpen(false)
+}
+
+
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 '>
+    <motion.div className='grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden' >
         {items.map(item => (
-            <motion.button 
-                className='flex flex-col md:flex-row items-center text-start p-4 overflow-hidden'
+            <motion.div 
+                layoutId={item.id}
+                onClick={() => {setSelectedId(item.id); setIsOpen(true)}}
+                className='flex flex-col md:flex-row items-center text-start p-4 overflow-hidden cursor-pointer'
             >
-                <motion.img initial={{x:100}} animate={{x:0}} className='w-24 h-24' src='https://picsum.photos/150'></motion.img>
+                <motion.img initial={{x:100}} animate={{x:0}} className='w-24 h-24 shadow-lg rounded-xl' src='https://picsum.photos/150'></motion.img>
                 <div className='p-4 text-center md:text-start'>
-                    <h1>{item.name}</h1>
-                    <p>{item.describe}</p>
+                    <motion.h1 className='text-xl bold text-violet-800'>{item.name}</motion.h1>
+                    <motion.p className='text-slate-500'>{item.describe}</motion.p>
                 </div>
-            </motion.button>
+            </motion.div>
+            
         ))}
-    </div>
+
+        <AnimatePresence className="" >
+            {isOpen && selectedId && (
+                <BackDrop onClick={handleClick}>
+                        <motion.div 
+                            className='text-center absolute relative w-4/5 lg:w-2/3  flex flex-col gap-y-5 bg-slate-100 place-items-center rounded-3xl p-10 '
+                            layoutId={selectedId}
+                            onClick={(e)=>e.stopPropagation()}
+                        >
+                            <motion.img initial={{x:100}} animate={{x:0}} className='shadow-lg rounded-xl' src='https://picsum.photos/400'></motion.img>
+                            
+                                <motion.h1 className='text-2xl lg:text-5xl bold'>{items[selectedId - 1].name}</motion.h1>
+                                <motion.p className='lg:text-2xl'>{items[selectedId - 1].describe}</motion.p>
+                                <motion.div
+                                    whileTap={{y:2}}
+                                >
+                                <a className='lg:text-2xl bold italic pointer-event-none border-b-2 p-2  border-dashed text-violet-800 rounded-lg border-violet-700 ' href={`${items[selectedId - 1].link}`} target="_blank">Live Demo</a>
+                                </motion.div>
+                                <motion.button className='bg-violet-800 rounded-2xl px-6 py-3 text-violet-50' onClick={() => {setSelectedId(null); ; setIsOpen(false)}} >close</motion.button>
+                           
+                        </motion.div>
+                </BackDrop>
+            )}
+        </AnimatePresence>
+    </motion.div>
   )
 }

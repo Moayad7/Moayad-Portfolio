@@ -37,7 +37,7 @@ const Modal = ({handleClose, text}) => {
                 drag='x'
                 dragConstraints={{right:0 ,left:0}}
                 onClick={(e)=>e.stopPropagation()}
-                className='bg-gradient-to-br from-pink-400 to-pink-600 text-center p-7 rounded-3xl lg:w-2/3 md:w-4/5 w-full'
+                className='bg-gradient-to-br from-violet-400 to-violet-600 text-center p-7 rounded-3xl lg:w-2/3 md:w-4/5 w-full'
                 variants={dropIn}
                 initial="hidden"
                 animate="visible"
@@ -47,7 +47,7 @@ const Modal = ({handleClose, text}) => {
                 <Button handleClose={handleClose}/>
             </motion.div>
 
-            
+
         </div>
     )
 }

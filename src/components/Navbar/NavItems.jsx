@@ -23,8 +23,8 @@ export const NavItems = (props) => {
     >
     {
       props.name == 'My CV'
-      ?<a href={props.url} target='_blank' className='w-full bg-gradient-to-br from-pink-500 to-pink-700 text-white px-7 py-3 rounded-xl '>{props.name}</a> 
-      :<motion.li><Link to={props.url} className=' w-full text-xl hover:text-pink-500 '>{props.name}</Link></motion.li>
+      ?<a href={props.url} target='_blank' className='w-full bg-gradient-to-br from-violet-500 to-violet-500 text-white px-7 py-3 rounded-xl '>{props.name}</a> 
+      :<motion.li><Link to={props.url} className=' w-full text-xl hover:text-violet-500 '>{props.name}</Link></motion.li>
     }
     </motion.div>
   )

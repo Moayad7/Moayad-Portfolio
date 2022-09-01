@@ -19,7 +19,7 @@ export function ShowButton({modalOpen,close,open}) {
         (modalOpen ? close() : open())
 
         }}
-      className=' text-pink-50 text-2xl md:text-3xl lg:text-4xl bg-gradient-to-br from-pink-500 to-pink-800 p-4 rounded-xl'
+      className=' text-violet-50 text-2xl md:text-3xl lg:text-4xl bg-gradient-to-br from-violet-500 to-violet-800 p-4 rounded-xl'
       >
         Show an advice
       </motion.button>
