@@ -1,11 +1,11 @@
-import image1 from './images/1.png'
-import image2 from './images/2.png'
-import image3 from './images/3.png'
-import image4 from './images/4.png'
-import image5 from './images/5.png'
-import image6 from './images/6.png'
-import image7 from './images/7.png'
-import image8 from './images/8.png'
+import image1 from './images/1.jpg'
+import image2 from './images/2.jpg'
+import image3 from './images/3.jpg'
+import image4 from './images/4.jpg'
+import image5 from './images/5.jpg'
+import image6 from './images/6.jpg'
+import image7 from './images/7.jpg'
+import image8 from './images/8.jpg'
 
 export default [
     {img:image1},
