@@ -16,7 +16,7 @@ const item = {
 export const Title = (props) => {
   return (
     <motion.button
-      className='mt-10 md:mt-20 bg-gradient-to-br from-violet-500 to-violet-700 rounded-2xl mx-auto'
+      className='mt-10 md:mt-20 bg-gradient-to-br from-violet-500 to-violet-700 rounded-2xl mx-auto '
       whileFocus={{scale:1.3}}
       variants={item}
       initial="hidden"

@@ -74,7 +74,7 @@ const handleClick = () => {
 
 
   return (
-    <div className='grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden' >
+    <div className='lg:px-36 px-10 grid  grid-cols-1 md:grid-cols-2 overflow-hidden' >
         {items.map(item => (
             <motion.div 
                 layoutId={item.id}
