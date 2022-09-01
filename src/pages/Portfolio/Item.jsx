@@ -83,8 +83,8 @@ const handleClick = () => {
             >
                 <motion.img initial={{x:100}} animate={{x:0}} className=' h-24 shadow-lg rounded-xl' src={item.img.img}></motion.img>
                 <div className='p-4 text-center md:text-start'>
-                    <motion.h1 className='text-xl bold text-violet-800'>{item.name}</motion.h1>
-                    <motion.p className='text-slate-500'>{item.describe}</motion.p>
+                    <h1 className='text-xl bold text-violet-800'>{item.name}</h1>
+                    <p className='text-slate-500'>{item.describe}</p>
                 </div>
             </motion.div>
             
@@ -98,9 +98,9 @@ const handleClick = () => {
                             layoutId={selectedId}
                             onClick={(e)=>e.stopPropagation()}
                         >
-                            <img  className='shadow-lg rounded-xl  lg:h-96' src={items[selectedId - 1].img.img}></.img>
+                            <img  className='shadow-lg rounded-xl  lg:h-96' src={items[selectedId - 1].img.img}></img>
                             
-                                <h1 className='text-2xl lg:text-5xl bold'>{items[selectedId - 1].name}</.h1>
+                                <h1 className='text-2xl lg:text-5xl bold'>{items[selectedId - 1].name}</h1>
                                 <p className='lg:text-2xl'>{items[selectedId - 1].describe}</p>
                                 <motion.div
                                     whileTap={{y:2}}
